@@ -61,7 +61,7 @@ app.post('/postImg', (req, res) => {
             Bytes: imageBytes
         },
         MinConfidence: 0,
-        ProjectVersionArn: process.env.AWS.MODELARN
+        ProjectVersionArn: process.env.AWS_MODELARN
     }
 
     const rekognition = new AWS.Rekognition();
